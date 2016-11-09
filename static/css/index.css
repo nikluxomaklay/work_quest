@@ -1,0 +1,16 @@
+.add-row {
+    width: 50%;
+    align-content: center;
+    margin: auto;
+    top: 50%;
+}
+.half_row {
+    width: 50%;
+    display: inline;
+}
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
