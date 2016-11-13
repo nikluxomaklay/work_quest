@@ -14,4 +14,4 @@ class SignInForm(forms.Form):
 
 
 class WriteMsgForm(forms.Form):
-    msg_text = forms.CharField(label='Сообщение', widget=forms.Textarea)
+    msg_text = forms.CharField(label='Сообщение', widget=forms.Textarea, max_length=255)
