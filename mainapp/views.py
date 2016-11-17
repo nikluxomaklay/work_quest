@@ -55,13 +55,11 @@ def view_sign_in(request):
         return render(request, 'public_html/sign_in_form.html', context)
 
 
+# почему-то не всегда срабатывает отправка почты, думаю, это связано с google
 def view_write_msg(request):
     context = {}
 
     if request.method == 'POST':
-        # msg = MsgModel()
-        # msg.user = request.user
-        # msg.msg_text = request.POST.get('msg_text')
         msg = MsgModel(user=request.user, msg_text=request.POST.get('msg_text'))
         msg.clean_fields()
         msg.save()

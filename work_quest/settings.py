@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 """
 Django settings for work_quest project.
 
@@ -125,6 +126,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+# aspmx.l.google.com позволяет отсылать почту только на аккаунты gmail.com
 EMAIL_HOST = 'aspmx.l.google.com'
 EMAIL_PORT = 25
 # EMAIL_USE_TLS = True
